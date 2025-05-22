@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ECORIDE - Covoiture écologique</title>
+    <link rel="stylesheet" href="style.css"
 </head>
 <body>
+    <header>
+        <nav>
+           Rechercher
+           PUBLIER
+           PROFIL
+           
+        </nav>
+    </header>
+    <section id="presentation">
+    <h1>Bienvenue chez EcoRide</h1>
+    <p>
+      Chez <strong>EcoRide</strong>, nous croyons que chaque déplacement peut devenir un geste pour la planète.
+      C’est pourquoi nous avons créé une plateforme de <strong>covoiturage écologique</strong>, dédiée aux voyageurs soucieux de l’environnement.
+    </p>
+    <img src="images/ecoride-voiture.jpg" alt="Voiture écologique partagée">
+  </section>
+
+  <!-- 🔎 Barre de recherche de trajets -->
+  <section id="recherche">
+    <h2>Rechercher un trajet</h2>
+    <form action="covoiturages.html" method="GET">
+      <label for="depart">Départ :</label>
+      <input type="text" id="depart" name="depart" required>
+
+      <label for="arrivee">Arrivée :</label>
+      <input type="text" id="arrivee" name="arrivee" required>
+
+      <label for="date">Date :</label>
+      <input type="date" id="date" name="date" required>
+
+      <button type="submit">Rechercher</button>
+    </form>
+  </section>
+
+  <!-- 🔗 Pied de page -->
+  <footer>
+    <p>Contact : <a href="mailto:contact@ecoride.fr">contact@ecoride.fr</a></p>
+    <p><a href="mentions-legales.html">Mentions légales</a></p>
+  </footer>
     
 </body>
 </html>
